@@ -1,20 +1,55 @@
 {
   "manifest_version": 3,
   "name": "Kinogo Pre-roll Blocker",
-  "version": "1.3.0",
-  "description": "Blocks known Kinogo player ads, page branding, and AdAngle banners.",
+  "version": "1.4.0",
+  "description": "Blocks known video and page ads across supported Kinogo sites.",
   "minimum_chrome_version": "145",
-  "permissions": ["declarativeNetRequest"],
+  "permissions": [
+    "declarativeNetRequest"
+  ],
   "content_scripts": [
     {
-      "matches": ["https://kinogo.org/*"],
-      "css": ["page-ads.css"],
+      "matches": [
+        "https://kinogo-1.online/*",
+        "https://kinogo-filmov.biz/*",
+        "https://kinogo-online.biz/*",
+        "https://kinogo.care/*",
+        "https://kinogo.direct/*",
+        "https://kinogo.ec/*",
+        "https://kinogo.family/*",
+        "https://kinogo.holiday/*",
+        "https://kinogo.house/*",
+        "https://kinogo.limited/*",
+        "https://kinogo.luxury/*",
+        "https://kinogo.org/*",
+        "https://kinogo.quest/*",
+        "https://kinogo.rehab/*",
+        "https://kinogo.report/*",
+        "https://kinogo.social/*",
+        "https://kinogo.solar/*",
+        "https://kinogo.style/*",
+        "https://kinogo.support/*",
+        "https://kinogo.tech/*",
+        "https://kinogo.tel/*",
+        "https://kinogo.tm/*",
+        "https://kinogo.wales/*",
+        "https://kinogo.world/*",
+        "https://lu.kinogo.style/*",
+        "https://uakinogo.ec/*"
+      ],
+      "css": [
+        "page-ads.css"
+      ],
       "run_at": "document_start"
     }
   ],
   "declarative_net_request": {
     "rule_resources": [
-      { "id": "cinemar_ads", "enabled": true, "path": "rules.json" }
+      {
+        "id": "cinemar_ads",
+        "enabled": true,
+        "path": "rules.json"
+      }
     ]
   }
 }

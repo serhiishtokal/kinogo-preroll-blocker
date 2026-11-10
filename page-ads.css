@@ -1,9 +1,9 @@
-body.branded > .ad-brandingg {
+body.branded > :is(.ad-brandingg, .ad-branding) {
   /* Keep the space needed by Kinogo's fixed header. */
   height: 33px !important;
 }
 
-body.branded > .ad-brandingg > ins,
-.cshflow:has(> ins > ins > div[id^="adangle-"]) {
+body.branded > :is(.ad-brandingg, .ad-branding) > *,
+:is(.cshflow, .zplata, .kng-rekl):has(> ins[data-key][data-cp-domain], > ins > ins > div[id^="adangle-"]) {
   display: none !important;
 }
