@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "urlFilter": "||cvt-s2.agl007.site/v/"
+    }
+  },
+  {
+    "id": 2,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "urlFilter": "||cvt-s2.agl008.shop/v/"
+    }
+  },
+  {
+    "id": 3,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "urlFilter": "||adx.stack.bidster.net/vast/"
+    }
+  },
+  {
+    "id": 4,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "urlFilter": "||wrapper.bracdn.online/wrapper4.php^"
+    }
+  },
+  {
+    "id": 5,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "urlFilter": "||yandex.ru/ads/adfox/12359998/getCode^"
+    }
+  },
+  {
+    "id": 6,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "initiatorDomains": ["api.nextembed.ws"],
+      "urlFilter": "||distribrey.com/load-xml/"
+    }
+  },
+  {
+    "id": 7,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "initiatorDomains": ["stravers.live"],
+      "requestMethods": ["post"],
+      "resourceTypes": ["xmlhttprequest"],
+      "urlFilter": "||pc.alloviewroll.com/lists.php^"
+    }
+  },
+  {
+    "id": 8,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "initiatorDomains": ["kinogo.org"],
+      "resourceTypes": ["sub_frame"],
+      "urlFilter": "||cvt-s1.agl010.pro/iframe/"
+    }
+  },
+  {
+    "id": 9,
+    "action": { "type": "block" },
+    "condition": {
+      "topDomains": ["kinogo.org"],
+      "initiatorDomains": ["kinogo.org"],
+      "resourceTypes": ["image"],
+      "urlFilter": "||cdn-t.b5c1d2e8c9982e3b965a27ac72ru7284cc.com/content/stream/agl/"
+    }
+  }
+]

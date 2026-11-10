@@ -1,0 +1,9 @@
+body.branded > .ad-brandingg {
+  /* Keep the space needed by Kinogo's fixed header. */
+  height: 33px !important;
+}
+
+body.branded > .ad-brandingg > ins,
+.cshflow:has(> ins > ins > div[id^="adangle-"]) {
+  display: none !important;
+}
